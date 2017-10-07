@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9EB89B81F88D6FA00EF90A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB89B71F88D6FA00EF90A6 /* AppDelegate.swift */; };
+		A9EB89BF1F88D6FB00EF90A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9EB89BD1F88D6FB00EF90A6 /* Main.storyboard */; };
+		A9EB89C11F88D6FB00EF90A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9EB89C01F88D6FB00EF90A6 /* Assets.xcassets */; };
+		A9EB89C41F88D6FB00EF90A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9EB89C21F88D6FB00EF90A6 /* LaunchScreen.storyboard */; };
+		A9EB89CE1F88DDA700EF90A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB89CD1F88DDA700EF90A6 /* LoginViewController.swift */; };
+		A9EB89D01F88DDB800EF90A6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB89CF1F88DDB800EF90A6 /* HomeViewController.swift */; };
+		A9EB89D21F88DDCE00EF90A6 /* DiagnosticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB89D11F88DDCE00EF90A6 /* DiagnosticsViewController.swift */; };
+		A9EB89D41F88DE1100EF90A6 /* HealthProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB89D31F88DE1100EF90A6 /* HealthProfileTableViewController.swift */; };
+		A9EB89D71F88DFCA00EF90A6 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB89D61F88DFCA00EF90A6 /* NetworkingManager.swift */; };
+		A9EB89DA1F88E14B00EF90A6 /* NokiaApiDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB89D91F88E14B00EF90A6 /* NokiaApiDeserializer.swift */; };
+		A9EB89DD1F88E3C200EF90A6 /* UITableViewCell+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB89DC1F88E3C200EF90A6 /* UITableViewCell+Utils.swift */; };
+		A9EB89DF1F88FC5100EF90A6 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB89DE1F88FC5100EF90A6 /* Settings.swift */; };
+		A9EB89E31F89022700EF90A6 /* SingleSwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB89E11F89022700EF90A6 /* SingleSwitchTableViewCell.swift */; };
+		A9EB89E41F89022700EF90A6 /* SingleSwitchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9EB89E21F89022700EF90A6 /* SingleSwitchTableViewCell.xib */; };
+		A9EB89E91F89045600EF90A6 /* DemographicAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB89E81F89045600EF90A6 /* DemographicAddition.swift */; };
+		A9EB89EB1F89048E00EF90A6 /* HealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB89EA1F89048E00EF90A6 /* HealthProfile.swift */; };
+		A9EB89ED1F89060300EF90A6 /* HealthAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB89EC1F89060300EF90A6 /* HealthAdditions.swift */; };
+		A9EB89EF1F89063C00EF90A6 /* HearthDiseaseSymptoms.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB89EE1F89063C00EF90A6 /* HearthDiseaseSymptoms.swift */; };
+		A9EB89F21F890C4800EF90A6 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB89F01F890C4800EF90A6 /* ProfileTableViewCell.swift */; };
+		A9EB89F31F890C4800EF90A6 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9EB89F11F890C4800EF90A6 /* ProfileTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A9EB89B41F88D6FA00EF90A6 /* DiseasePrediction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiseasePrediction.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9EB89B71F88D6FA00EF90A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9EB89BE1F88D6FB00EF90A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9EB89C01F88D6FB00EF90A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9EB89C31F88D6FB00EF90A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9EB89C51F88D6FB00EF90A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9EB89CD1F88DDA700EF90A6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A9EB89CF1F88DDB800EF90A6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A9EB89D11F88DDCE00EF90A6 /* DiagnosticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticsViewController.swift; sourceTree = "<group>"; };
+		A9EB89D31F88DE1100EF90A6 /* HealthProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthProfileTableViewController.swift; sourceTree = "<group>"; };
+		A9EB89D61F88DFCA00EF90A6 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		A9EB89D91F88E14B00EF90A6 /* NokiaApiDeserializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NokiaApiDeserializer.swift; sourceTree = "<group>"; };
+		A9EB89DC1F88E3C200EF90A6 /* UITableViewCell+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Utils.swift"; sourceTree = "<group>"; };
+		A9EB89DE1F88FC5100EF90A6 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		A9EB89E11F89022700EF90A6 /* SingleSwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSwitchTableViewCell.swift; sourceTree = "<group>"; };
+		A9EB89E21F89022700EF90A6 /* SingleSwitchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleSwitchTableViewCell.xib; sourceTree = "<group>"; };
+		A9EB89E81F89045600EF90A6 /* DemographicAddition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemographicAddition.swift; sourceTree = "<group>"; };
+		A9EB89EA1F89048E00EF90A6 /* HealthProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthProfile.swift; sourceTree = "<group>"; };
+		A9EB89EC1F89060300EF90A6 /* HealthAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthAdditions.swift; sourceTree = "<group>"; };
+		A9EB89EE1F89063C00EF90A6 /* HearthDiseaseSymptoms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearthDiseaseSymptoms.swift; sourceTree = "<group>"; };
+		A9EB89F01F890C4800EF90A6 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		A9EB89F11F890C4800EF90A6 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9EB89B11F88D6FA00EF90A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9EB89AB1F88D6FA00EF90A6 = {
+			isa = PBXGroup;
+			children = (
+				A9EB89B61F88D6FA00EF90A6 /* DiseasePrediction */,
+				A9EB89B51F88D6FA00EF90A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9EB89B51F88D6FA00EF90A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9EB89B41F88D6FA00EF90A6 /* DiseasePrediction.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9EB89B61F88D6FA00EF90A6 /* DiseasePrediction */ = {
+			isa = PBXGroup;
+			children = (
+				A9EB89E51F89040200EF90A6 /* Model */,
+				A9EB89DB1F88E3AD00EF90A6 /* Common */,
+				A9EB89D81F88E13400EF90A6 /* Deserialization */,
+				A9EB89D51F88DF9D00EF90A6 /* Networking */,
+				A9EB89CC1F88D71C00EF90A6 /* View */,
+				A9EB89CB1F88D71400EF90A6 /* Viewcontroller */,
+				A9EB89B71F88D6FA00EF90A6 /* AppDelegate.swift */,
+				A9EB89BD1F88D6FB00EF90A6 /* Main.storyboard */,
+				A9EB89C01F88D6FB00EF90A6 /* Assets.xcassets */,
+				A9EB89C21F88D6FB00EF90A6 /* LaunchScreen.storyboard */,
+				A9EB89C51F88D6FB00EF90A6 /* Info.plist */,
+			);
+			path = DiseasePrediction;
+			sourceTree = "<group>";
+		};
+		A9EB89CB1F88D71400EF90A6 /* Viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				A9EB89CD1F88DDA700EF90A6 /* LoginViewController.swift */,
+				A9EB89CF1F88DDB800EF90A6 /* HomeViewController.swift */,
+				A9EB89D11F88DDCE00EF90A6 /* DiagnosticsViewController.swift */,
+				A9EB89D31F88DE1100EF90A6 /* HealthProfileTableViewController.swift */,
+			);
+			path = Viewcontroller;
+			sourceTree = "<group>";
+		};
+		A9EB89CC1F88D71C00EF90A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9EB89E01F89020300EF90A6 /* Profile */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9EB89D51F88DF9D00EF90A6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A9EB89D61F88DFCA00EF90A6 /* NetworkingManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A9EB89D81F88E13400EF90A6 /* Deserialization */ = {
+			isa = PBXGroup;
+			children = (
+				A9EB89D91F88E14B00EF90A6 /* NokiaApiDeserializer.swift */,
+			);
+			path = Deserialization;
+			sourceTree = "<group>";
+		};
+		A9EB89DB1F88E3AD00EF90A6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A9EB89DC1F88E3C200EF90A6 /* UITableViewCell+Utils.swift */,
+				A9EB89DE1F88FC5100EF90A6 /* Settings.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A9EB89E01F89020300EF90A6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A9EB89E11F89022700EF90A6 /* SingleSwitchTableViewCell.swift */,
+				A9EB89E21F89022700EF90A6 /* SingleSwitchTableViewCell.xib */,
+				A9EB89F01F890C4800EF90A6 /* ProfileTableViewCell.swift */,
+				A9EB89F11F890C4800EF90A6 /* ProfileTableViewCell.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		A9EB89E51F89040200EF90A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A9EB89E71F89041300EF90A6 /* Lokal */,
+				A9EB89E61F89040C00EF90A6 /* API */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A9EB89E61F89040C00EF90A6 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A9EB89EA1F89048E00EF90A6 /* HealthProfile.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A9EB89E71F89041300EF90A6 /* Lokal */ = {
+			isa = PBXGroup;
+			children = (
+				A9EB89E81F89045600EF90A6 /* DemographicAddition.swift */,
+				A9EB89EC1F89060300EF90A6 /* HealthAdditions.swift */,
+				A9EB89EE1F89063C00EF90A6 /* HearthDiseaseSymptoms.swift */,
+			);
+			path = Lokal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9EB89B31F88D6FA00EF90A6 /* DiseasePrediction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9EB89C81F88D6FB00EF90A6 /* Build configuration list for PBXNativeTarget "DiseasePrediction" */;
+			buildPhases = (
+				A9EB89B01F88D6FA00EF90A6 /* Sources */,
+				A9EB89B11F88D6FA00EF90A6 /* Frameworks */,
+				A9EB89B21F88D6FA00EF90A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DiseasePrediction;
+			productName = DiseasePrediction;
+			productReference = A9EB89B41F88D6FA00EF90A6 /* DiseasePrediction.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9EB89AC1F88D6FA00EF90A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = BurdaHackday;
+				TargetAttributes = {
+					A9EB89B31F88D6FA00EF90A6 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A9EB89AF1F88D6FA00EF90A6 /* Build configuration list for PBXProject "DiseasePrediction" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9EB89AB1F88D6FA00EF90A6;
+			productRefGroup = A9EB89B51F88D6FA00EF90A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9EB89B31F88D6FA00EF90A6 /* DiseasePrediction */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9EB89B21F88D6FA00EF90A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9EB89C41F88D6FB00EF90A6 /* LaunchScreen.storyboard in Resources */,
+				A9EB89E41F89022700EF90A6 /* SingleSwitchTableViewCell.xib in Resources */,
+				A9EB89C11F88D6FB00EF90A6 /* Assets.xcassets in Resources */,
+				A9EB89BF1F88D6FB00EF90A6 /* Main.storyboard in Resources */,
+				A9EB89F31F890C4800EF90A6 /* ProfileTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9EB89B01F88D6FA00EF90A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9EB89EF1F89063C00EF90A6 /* HearthDiseaseSymptoms.swift in Sources */,
+				A9EB89CE1F88DDA700EF90A6 /* LoginViewController.swift in Sources */,
+				A9EB89E31F89022700EF90A6 /* SingleSwitchTableViewCell.swift in Sources */,
+				A9EB89F21F890C4800EF90A6 /* ProfileTableViewCell.swift in Sources */,
+				A9EB89ED1F89060300EF90A6 /* HealthAdditions.swift in Sources */,
+				A9EB89D21F88DDCE00EF90A6 /* DiagnosticsViewController.swift in Sources */,
+				A9EB89B81F88D6FA00EF90A6 /* AppDelegate.swift in Sources */,
+				A9EB89DD1F88E3C200EF90A6 /* UITableViewCell+Utils.swift in Sources */,
+				A9EB89EB1F89048E00EF90A6 /* HealthProfile.swift in Sources */,
+				A9EB89DA1F88E14B00EF90A6 /* NokiaApiDeserializer.swift in Sources */,
+				A9EB89D71F88DFCA00EF90A6 /* NetworkingManager.swift in Sources */,
+				A9EB89DF1F88FC5100EF90A6 /* Settings.swift in Sources */,
+				A9EB89D01F88DDB800EF90A6 /* HomeViewController.swift in Sources */,
+				A9EB89D41F88DE1100EF90A6 /* HealthProfileTableViewController.swift in Sources */,
+				A9EB89E91F89045600EF90A6 /* DemographicAddition.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A9EB89BD1F88D6FB00EF90A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9EB89BE1F88D6FB00EF90A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A9EB89C21F88D6FB00EF90A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9EB89C31F88D6FB00EF90A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9EB89C61F88D6FB00EF90A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9EB89C71F88D6FB00EF90A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9EB89C91F88D6FB00EF90A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DiseasePrediction/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.burdaHackday.DiseasePrediction;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9EB89CA1F88D6FB00EF90A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DiseasePrediction/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.burdaHackday.DiseasePrediction;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9EB89AF1F88D6FA00EF90A6 /* Build configuration list for PBXProject "DiseasePrediction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9EB89C61F88D6FB00EF90A6 /* Debug */,
+				A9EB89C71F88D6FB00EF90A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9EB89C81F88D6FB00EF90A6 /* Build configuration list for PBXNativeTarget "DiseasePrediction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9EB89C91F88D6FB00EF90A6 /* Debug */,
+				A9EB89CA1F88D6FB00EF90A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9EB89AC1F88D6FA00EF90A6 /* Project object */;
+}
