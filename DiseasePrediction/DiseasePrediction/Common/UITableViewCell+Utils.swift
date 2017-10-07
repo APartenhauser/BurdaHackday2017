@@ -6,7 +6,7 @@
 //  Copyright © 2017 BurdaHackday. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public protocol AddableNib: class {
     static var Identifer: String { get }
@@ -15,5 +15,11 @@ public protocol AddableNib: class {
 public extension AddableNib {
     public static var Identifer: String {
         return NSStringFromClass(self).components(separatedBy: ".").last!
+    }
+}
+
+extension UITableView {
+    func addTableViewCell(for addable: AddableNib.Type) {
+        self.register(UINib(nibName: addable.Identifer, bundle: nil), forCellReuseIdentifier: addable.Identifer)
     }
 }

@@ -12,7 +12,7 @@ class HomeViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = "Health Tips"
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -12,10 +12,15 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    let mainThemeColor = UIColor(red: 20/255, green: 129/255, blue: 160/255, alpha: 1)
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UINavigationBar.appearance().tintColor = .white
+        UINavigationBar.appearance().barTintColor = mainThemeColor
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        UIApplication.shared.statusBarStyle = .lightContent
+        
         return true
     }
 

@@ -9,10 +9,19 @@
 import UIKit
 
 class ProfileTableViewCell: UITableViewCell, AddableNib {
-
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var genderLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
+    func update(with profile: HealthProfile) {
+        nameLabel.text = profile.name + profile.sureName
+        ageLabel.text = "\(profile.age) Jahre"
+        genderLabel.text = profile.gender.rawValue
+    }
 }

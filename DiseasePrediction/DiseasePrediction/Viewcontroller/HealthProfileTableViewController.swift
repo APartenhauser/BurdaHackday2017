@@ -8,33 +8,46 @@
 
 import UIKit
 
+enum HealthProfileSection {
+    case profile, apiData
+    
+    static func allSections() -> Array<HealthProfileSection> {
+        return [.profile, .apiData]
+    }
+}
+
 class HealthProfileTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        title = "Profile"
+        
+        tableView.addTableViewCell(for: ProfileTableViewCell.self)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return HealthProfileSection.allSections().count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        let healthSection = HealthProfileSection.allSections()[section]
+        switch healthSection {
+        case .profile:
+            return 1
+        case .apiData:
+            return 0 // TODO
+        }
     }
 
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let healthSection = HealthProfileSection.allSections()[indexPath.section]
+        if healthSection == .profile {
+            let cell = tableView.dequeueReusableCell(withIdentifier: ProfileTableViewCell.Identifer, for: indexPath) as! ProfileTableViewCell
+            
+            return cell
+        }
+        
+        return UITableViewCell()
+    }
 }

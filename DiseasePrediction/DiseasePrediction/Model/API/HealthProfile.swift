@@ -14,15 +14,11 @@ class HealthProfile: NSObject {
         case male
         case female
         case unspecified
-        
-        func image() -> UIImage {
-            return UIImage()
-        }
     }
     
     var name: String = "Andreas"
     var sureName: String = "Partenhauser"
-    var birthDate: String?
+    var age: Int = 33
     var gender: Gender = .unspecified
     
     var hearthDiseaseSymptoms = HearthDiseaseSymptoms()
