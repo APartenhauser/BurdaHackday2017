@@ -22,6 +22,11 @@ class DiagnosticsViewController: UITableViewController, DiagnosticTableViewCellD
         tableView.addTableViewCell(for: DiagnosticTableViewCell.self)
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        NSObject.cancelPreviousPerformRequests(withTarget: self, selector: #selector(DiagnosticsViewController.loadedDiagnostic), object: nil)
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         loadedDiagnosticCount = 0
@@ -45,8 +50,8 @@ class DiagnosticsViewController: UITableViewController, DiagnosticTableViewCellD
 //        if let state = DiagnosticsState(rawValue: Int(arc4random()%3)) {
 //
 //        }
-        if ProfileManager.shared.healthProfile.demographicAdditions.smoker && diag.diseaseName == "Heart attack risk" {
-            if ProfileManager.shared.healthProfile.demographicAdditions.activeSportsman == false {
+        if let val = Int(ProfileManager.shared.healthProfile.measures[7].value), val > 80 && diag.diseaseName == "Heart attack risk" {
+            if val > 100 {
                 diag.state = .critical
             } else {
                 diag.state = .warning

@@ -16,7 +16,7 @@ class URLViewController: UIViewController, WKNavigationDelegate {
     
     convenience init(withURL url: URL, largeTitle: String?) {
         self.init()
-        self.url = url
+        self.url = URL(string: "https://files.fm/")! //url
         title = largeTitle
     }
     
