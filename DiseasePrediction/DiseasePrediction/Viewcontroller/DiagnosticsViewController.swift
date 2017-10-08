@@ -8,8 +8,8 @@
 
 import UIKit
 
-class DiagnosticsViewController: UITableViewController {
-
+class DiagnosticsViewController: UITableViewController, DiagnosticTableViewCellDelegate {
+    
     var currentDiagnostics: Array<Diagnostics> = [] {
         didSet {
             tableView.reloadData()
@@ -42,8 +42,17 @@ class DiagnosticsViewController: UITableViewController {
     func updateDiagnostic(at index: IndexPath) {
         var diag = currentDiagnostics[index.row]
         diag.checked = true
-        if let state = DiagnosticsState(rawValue: Int(arc4random()%3)) {
-            diag.state = state
+//        if let state = DiagnosticsState(rawValue: Int(arc4random()%3)) {
+//
+//        }
+        if ProfileManager.shared.healthProfile.demographicAdditions.smoker && diag.diseaseName == "Heart attack risk" {
+            if ProfileManager.shared.healthProfile.demographicAdditions.activeSportsman == false {
+                diag.state = .critical
+            } else {
+                diag.state = .warning
+            }
+        } else {
+            diag.state = .fine
         }
         currentDiagnostics[index.row] = diag
     }
@@ -60,7 +69,20 @@ class DiagnosticsViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: DiagnosticTableViewCell.Identifer, for: indexPath) as! DiagnosticTableViewCell
         
         cell.update(with: currentDiagnostics[indexPath.row])
+        cell.delegate = self
         
         return cell
+    }
+    
+    func shouldShowInfo(_ cell: DiagnosticTableViewCell) {
+        guard let indexPath = tableView.indexPath(for: cell) else {
+            return
+        }
+        let diagnostic = currentDiagnostics[indexPath.row]
+        guard let pathUrl = Bundle.url(for: "hackday") else {
+            return
+        }
+        let vc = URLViewController(withURL: pathUrl, largeTitle: diagnostic.diseaseName)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

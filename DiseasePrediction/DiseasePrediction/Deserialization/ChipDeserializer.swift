@@ -1,16 +1,16 @@
 //
-//  NokiaApiDeserializer.swift
+//  ChipDeserializer.swift
 //  DiseasePrediction
 //
-//  Created by Partenhauser Andreas on 07.10.17.
+//  Created by Partenhauser Andreas on 08.10.17.
 //  Copyright © 2017 BurdaHackday. All rights reserved.
 //
 
 import Foundation
 
-class NokiaApiDeserializer<T>: BaseResponseDeserializer<T> where T: ResponseCollectionConvertible & ResponseConvertible {
-    override static func deserialize(_ responseData: Data?) -> NokiaApiDeserializer<T> {
-        let deserializer = NokiaApiDeserializer<T>()
+class ChipDeserializer<T>: BaseResponseDeserializer<T> where T: ResponseConvertible & ResponseCollectionConvertible {
+    override class func deserialize(_ responseData: Data?) -> ChipDeserializer<T> {
+        let deserializer = ChipDeserializer<T>()
         
         guard let data = responseData else {
             deserializer.error = "No Data returned"
@@ -21,7 +21,7 @@ class NokiaApiDeserializer<T>: BaseResponseDeserializer<T> where T: ResponseColl
                 deserializer.error = "Wrong data format"
                 return deserializer
             }
-            if let responseCollection = responseObjects["measures"] as? Array<Dictionary<String, Any>> {
+            if let responseCollection = responseObjects["data"] as? Array<Dictionary<String, Any>> {
                 deserializer.objects = T.collection(responseCollection)
             }
         } catch {

@@ -9,28 +9,47 @@
 import UIKit
 
 class HomeViewController: UITableViewController {
-
+    var data: Array<Article> = [] {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Health Tips"
+        tableView.addTableViewCell(for: ArticleTableViewCell.self)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if Settings.shared.load(forKey: SettingKeys.firstStartKey, defaultValue: false) {
+            NetworkManager.shared.requestAll(["number": "10", "topics": "mobile_welt"], serializer: ChipDeserializer<Article>.self) { (deserializer, error) in
+                guard let articles = deserializer?.objects else {
+                    return
+                }
+                self.data = articles
+            }
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        if Settings.shared.load(forKey: SettingKeys.loggedInKey, defaultValue: false) {
-            return
-        }
+    }
+
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return data.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: ArticleTableViewCell.Identifer, for: indexPath) as! ArticleTableViewCell
         
-        if !Settings.shared.load(forKey: SettingKeys.firstStartKey, defaultValue: false) {
-            showLogin()
-        }
+        cell.update(with: data[indexPath.row])
+        
+        return cell
     }
-
-    func showLogin() {
-        guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController else {
-            return
-        }
-        present(vc, animated: true, completion: nil)
-    }
-
 }

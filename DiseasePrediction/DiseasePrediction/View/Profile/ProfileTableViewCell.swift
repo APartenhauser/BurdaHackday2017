@@ -20,7 +20,7 @@ class ProfileTableViewCell: UITableViewCell, AddableNib {
     }
     
     func update(with profile: HealthProfile) {
-        nameLabel.text = profile.name + profile.sureName
+        nameLabel.text = profile.fullName
         ageLabel.text = "\(profile.age) Jahre"
         genderLabel.text = profile.gender.rawValue
     }

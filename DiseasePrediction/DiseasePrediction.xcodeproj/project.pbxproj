@@ -7,10 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9736A121F8A0C5800FD52B0 /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9736A111F8A0C5800FD52B0 /* TableHeaderView.swift */; };
+		A9736A141F8A10F600FD52B0 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9736A131F8A10F600FD52B0 /* ProfileManager.swift */; };
+		A99FE2071F89F2820027B9BC /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FE2051F89F2820027B9BC /* ArticleTableViewCell.swift */; };
+		A99FE2081F89F2820027B9BC /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A99FE2061F89F2820027B9BC /* ArticleTableViewCell.xib */; };
+		A99FE20A1F89F6B40027B9BC /* Measures.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FE2091F89F6B40027B9BC /* Measures.swift */; };
+		A99FE20C1F89FBB10027B9BC /* URLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FE20B1F89FBB10027B9BC /* URLViewController.swift */; };
+		A99FE20E1F89FD0A0027B9BC /* Bundle+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FE20D1F89FD0A0027B9BC /* Bundle+Util.swift */; };
+		A99FE2101F8A01E70027B9BC /* hackday.html in Resources */ = {isa = PBXBuildFile; fileRef = A99FE20F1F89FEAE0027B9BC /* hackday.html */; };
+		A99FE2131F8A02F30027B9BC /* SingleMeasureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FE2111F8A02F30027B9BC /* SingleMeasureTableViewCell.swift */; };
+		A99FE2141F8A02F30027B9BC /* SingleMeasureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A99FE2121F8A02F30027B9BC /* SingleMeasureTableViewCell.xib */; };
 		A9D093B51F8925A000E1E70D /* DiagnosticTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D093B31F8925A000E1E70D /* DiagnosticTableViewCell.swift */; };
 		A9D093B61F8925A000E1E70D /* DiagnosticTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9D093B41F8925A000E1E70D /* DiagnosticTableViewCell.xib */; };
 		A9D093B81F89261500E1E70D /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D093B71F89261500E1E70D /* RoundedCornerView.swift */; };
 		A9D093BA1F8928D500E1E70D /* Diagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D093B91F8928D500E1E70D /* Diagnostics.swift */; };
+		A9D093BC1F89EF0A00E1E70D /* ChipDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D093BB1F89EF0A00E1E70D /* ChipDeserializer.swift */; };
+		A9D093BE1F89EF5B00E1E70D /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D093BD1F89EF5B00E1E70D /* Article.swift */; };
 		A9EB89B81F88D6FA00EF90A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB89B71F88D6FA00EF90A6 /* AppDelegate.swift */; };
 		A9EB89BF1F88D6FB00EF90A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9EB89BD1F88D6FB00EF90A6 /* Main.storyboard */; };
 		A9EB89C11F88D6FB00EF90A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9EB89C01F88D6FB00EF90A6 /* Assets.xcassets */; };
@@ -34,10 +46,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A9736A111F8A0C5800FD52B0 /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
+		A9736A131F8A10F600FD52B0 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		A99FE2051F89F2820027B9BC /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		A99FE2061F89F2820027B9BC /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
+		A99FE2091F89F6B40027B9BC /* Measures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measures.swift; sourceTree = "<group>"; };
+		A99FE20B1F89FBB10027B9BC /* URLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLViewController.swift; sourceTree = "<group>"; };
+		A99FE20D1F89FD0A0027B9BC /* Bundle+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Util.swift"; sourceTree = "<group>"; };
+		A99FE20F1F89FEAE0027B9BC /* hackday.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = hackday.html; sourceTree = "<group>"; };
+		A99FE2111F8A02F30027B9BC /* SingleMeasureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleMeasureTableViewCell.swift; sourceTree = "<group>"; };
+		A99FE2121F8A02F30027B9BC /* SingleMeasureTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleMeasureTableViewCell.xib; sourceTree = "<group>"; };
 		A9D093B31F8925A000E1E70D /* DiagnosticTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticTableViewCell.swift; sourceTree = "<group>"; };
 		A9D093B41F8925A000E1E70D /* DiagnosticTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiagnosticTableViewCell.xib; sourceTree = "<group>"; };
 		A9D093B71F89261500E1E70D /* RoundedCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
 		A9D093B91F8928D500E1E70D /* Diagnostics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diagnostics.swift; sourceTree = "<group>"; };
+		A9D093BB1F89EF0A00E1E70D /* ChipDeserializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipDeserializer.swift; sourceTree = "<group>"; };
+		A9D093BD1F89EF5B00E1E70D /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		A9EB89B41F88D6FA00EF90A6 /* DiseasePrediction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiseasePrediction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9EB89B71F88D6FA00EF90A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9EB89BE1F88D6FB00EF90A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -73,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A99FE2041F89F2490027B9BC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A99FE2051F89F2820027B9BC /* ArticleTableViewCell.swift */,
+				A99FE2061F89F2820027B9BC /* ArticleTableViewCell.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		A9D093B21F89252400E1E70D /* Diagnostics */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +146,7 @@
 				A9EB89C01F88D6FB00EF90A6 /* Assets.xcassets */,
 				A9EB89C21F88D6FB00EF90A6 /* LaunchScreen.storyboard */,
 				A9EB89C51F88D6FB00EF90A6 /* Info.plist */,
+				A99FE20F1F89FEAE0027B9BC /* hackday.html */,
 			);
 			path = DiseasePrediction;
 			sourceTree = "<group>";
@@ -124,6 +158,7 @@
 				A9EB89CF1F88DDB800EF90A6 /* HomeViewController.swift */,
 				A9EB89D11F88DDCE00EF90A6 /* DiagnosticsViewController.swift */,
 				A9EB89D31F88DE1100EF90A6 /* HealthProfileTableViewController.swift */,
+				A99FE20B1F89FBB10027B9BC /* URLViewController.swift */,
 			);
 			path = Viewcontroller;
 			sourceTree = "<group>";
@@ -131,6 +166,7 @@
 		A9EB89CC1F88D71C00EF90A6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A99FE2041F89F2490027B9BC /* Home */,
 				A9D093B21F89252400E1E70D /* Diagnostics */,
 				A9EB89E01F89020300EF90A6 /* Profile */,
 			);
@@ -149,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				A9EB89D91F88E14B00EF90A6 /* NokiaApiDeserializer.swift */,
+				A9D093BB1F89EF0A00E1E70D /* ChipDeserializer.swift */,
 			);
 			path = Deserialization;
 			sourceTree = "<group>";
@@ -158,6 +195,7 @@
 			children = (
 				A9EB89DC1F88E3C200EF90A6 /* UITableViewCell+Utils.swift */,
 				A9EB89DE1F88FC5100EF90A6 /* Settings.swift */,
+				A99FE20D1F89FD0A0027B9BC /* Bundle+Util.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -169,6 +207,9 @@
 				A9EB89E21F89022700EF90A6 /* SingleSwitchTableViewCell.xib */,
 				A9EB89F01F890C4800EF90A6 /* ProfileTableViewCell.swift */,
 				A9EB89F11F890C4800EF90A6 /* ProfileTableViewCell.xib */,
+				A99FE2111F8A02F30027B9BC /* SingleMeasureTableViewCell.swift */,
+				A99FE2121F8A02F30027B9BC /* SingleMeasureTableViewCell.xib */,
+				A9736A111F8A0C5800FD52B0 /* TableHeaderView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -187,6 +228,8 @@
 			children = (
 				A9EB89EA1F89048E00EF90A6 /* HealthProfile.swift */,
 				A9D093B91F8928D500E1E70D /* Diagnostics.swift */,
+				A9D093BD1F89EF5B00E1E70D /* Article.swift */,
+				A99FE2091F89F6B40027B9BC /* Measures.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -197,6 +240,7 @@
 				A9EB89E81F89045600EF90A6 /* DemographicAddition.swift */,
 				A9EB89EC1F89060300EF90A6 /* HealthAdditions.swift */,
 				A9EB89EE1F89063C00EF90A6 /* HearthDiseaseSymptoms.swift */,
+				A9736A131F8A10F600FD52B0 /* ProfileManager.swift */,
 			);
 			path = Lokal;
 			sourceTree = "<group>";
@@ -260,10 +304,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A99FE2141F8A02F30027B9BC /* SingleMeasureTableViewCell.xib in Resources */,
 				A9EB89C41F88D6FB00EF90A6 /* LaunchScreen.storyboard in Resources */,
 				A9EB89E41F89022700EF90A6 /* SingleSwitchTableViewCell.xib in Resources */,
 				A9EB89C11F88D6FB00EF90A6 /* Assets.xcassets in Resources */,
 				A9EB89BF1F88D6FB00EF90A6 /* Main.storyboard in Resources */,
+				A99FE2101F8A01E70027B9BC /* hackday.html in Resources */,
+				A99FE2081F89F2820027B9BC /* ArticleTableViewCell.xib in Resources */,
 				A9D093B61F8925A000E1E70D /* DiagnosticTableViewCell.xib in Resources */,
 				A9EB89F31F890C4800EF90A6 /* ProfileTableViewCell.xib in Resources */,
 			);
@@ -276,10 +323,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9736A121F8A0C5800FD52B0 /* TableHeaderView.swift in Sources */,
 				A9D093B51F8925A000E1E70D /* DiagnosticTableViewCell.swift in Sources */,
 				A9EB89EF1F89063C00EF90A6 /* HearthDiseaseSymptoms.swift in Sources */,
+				A9D093BC1F89EF0A00E1E70D /* ChipDeserializer.swift in Sources */,
 				A9EB89CE1F88DDA700EF90A6 /* LoginViewController.swift in Sources */,
+				A9D093BE1F89EF5B00E1E70D /* Article.swift in Sources */,
 				A9EB89E31F89022700EF90A6 /* SingleSwitchTableViewCell.swift in Sources */,
+				A99FE20A1F89F6B40027B9BC /* Measures.swift in Sources */,
+				A99FE20C1F89FBB10027B9BC /* URLViewController.swift in Sources */,
 				A9EB89F21F890C4800EF90A6 /* ProfileTableViewCell.swift in Sources */,
 				A9EB89ED1F89060300EF90A6 /* HealthAdditions.swift in Sources */,
 				A9D093B81F89261500E1E70D /* RoundedCornerView.swift in Sources */,
@@ -287,12 +339,16 @@
 				A9EB89B81F88D6FA00EF90A6 /* AppDelegate.swift in Sources */,
 				A9EB89DD1F88E3C200EF90A6 /* UITableViewCell+Utils.swift in Sources */,
 				A9D093BA1F8928D500E1E70D /* Diagnostics.swift in Sources */,
+				A9736A141F8A10F600FD52B0 /* ProfileManager.swift in Sources */,
+				A99FE20E1F89FD0A0027B9BC /* Bundle+Util.swift in Sources */,
 				A9EB89EB1F89048E00EF90A6 /* HealthProfile.swift in Sources */,
 				A9EB89DA1F88E14B00EF90A6 /* NokiaApiDeserializer.swift in Sources */,
 				A9EB89D71F88DFCA00EF90A6 /* NetworkingManager.swift in Sources */,
 				A9EB89DF1F88FC5100EF90A6 /* Settings.swift in Sources */,
 				A9EB89D01F88DDB800EF90A6 /* HomeViewController.swift in Sources */,
 				A9EB89D41F88DE1100EF90A6 /* HealthProfileTableViewController.swift in Sources */,
+				A99FE2131F8A02F30027B9BC /* SingleMeasureTableViewCell.swift in Sources */,
+				A99FE2071F89F2820027B9BC /* ArticleTableViewCell.swift in Sources */,
 				A9EB89E91F89045600EF90A6 /* DemographicAddition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,9 +487,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8V9T39B294;
 				INFOPLIST_FILE = DiseasePrediction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.burdaHackday.DiseasePrediction;
+				PRODUCT_BUNDLE_IDENTIFIER = de.loretogames.DiseasePrediction;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,9 +502,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8V9T39B294;
 				INFOPLIST_FILE = DiseasePrediction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.burdaHackday.DiseasePrediction;
+				PRODUCT_BUNDLE_IDENTIFIER = de.loretogames.DiseasePrediction;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -19,8 +19,13 @@ class HealthProfile: NSObject {
     var name: String = "Andreas"
     var sureName: String = "Partenhauser"
     var age: Int = 33
-    var gender: Gender = .unspecified
+    var gender: Gender = .male
+    
+    var fullName: String {
+        return name + " " + sureName
+    }
     
     var hearthDiseaseSymptoms = HearthDiseaseSymptoms()
     var demographicAdditions = DemographicAddition()
+    var measures: Array<Measure> = []
 }

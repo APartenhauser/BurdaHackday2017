@@ -34,9 +34,9 @@ struct Diagnostics {
         return [Diagnostics(diseaseName: "Blood preasure", checked: false, state: .notChecked),
         Diagnostics(diseaseName: "Pulse at rest", checked: false, state: .notChecked),
         Diagnostics(diseaseName: "Heart attack risk", checked: false, state: .notChecked),
-        Diagnostics(diseaseName: "Diabetes", checked: false, state: .notChecked),
-        Diagnostics(diseaseName: "Thrombose", checked: false, state: .notChecked),
-        Diagnostics(diseaseName: "Brain attack", checked: false, state: .notChecked)]
+        Diagnostics(diseaseName: "Diabetes risk", checked: false, state: .notChecked),
+        Diagnostics(diseaseName: "Thrombose risk", checked: false, state: .notChecked),
+        Diagnostics(diseaseName: "Brain attack risk", checked: false, state: .notChecked)]
     }
     
     var diseaseName: String

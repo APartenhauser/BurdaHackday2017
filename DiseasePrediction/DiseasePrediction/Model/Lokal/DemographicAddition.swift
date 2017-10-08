@@ -18,4 +18,8 @@ class DemographicAddition: NSObject {
 
     var mySportsType: SportsType = .normal
     var smoker: Bool = false
+    
+    var activeSportsman: Bool {
+        return mySportsType == .normal || mySportsType == .verySporty
+    }
 }

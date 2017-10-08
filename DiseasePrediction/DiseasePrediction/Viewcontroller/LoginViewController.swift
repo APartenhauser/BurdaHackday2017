@@ -38,6 +38,7 @@ class LoginViewController: UIViewController {
         statusLabel.text = LoginState.success.rawValue
         Settings.shared.save(true, forKey: SettingKeys.firstStartKey)
         Settings.shared.save(true, forKey: SettingKeys.loggedInKey)
-        perform(#selector(LoginViewController.dismiss(animated:completion:)), with: nil, afterDelay: 1)
+        dismiss(animated: true, completion: nil)
+//        perform(#selector(LoginViewController.dismiss(animated:completion:)), with: nil, afterDelay: 1)
     }
 }

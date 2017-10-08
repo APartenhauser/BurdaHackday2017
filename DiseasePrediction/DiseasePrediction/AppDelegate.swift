@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         UIApplication.shared.statusBarStyle = .lightContent
         
+        NetworkManager.shared.baseRequestUrl = "https://appsbackend.chip.de"
+        
         return true
     }
 
