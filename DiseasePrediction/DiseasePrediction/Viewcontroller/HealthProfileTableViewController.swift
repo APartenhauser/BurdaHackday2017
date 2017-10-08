@@ -48,8 +48,11 @@ class HealthProfileTableViewController: UITableViewController, SingleSwitchTable
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if Settings.shared.load(forKey: SettingKeys.loggedInKey, defaultValue: false) {
-            NetworkManager.shared.requestAll([:], serializer: NokiaApiDeserializer<Measure>.self, route: "/rest/data/measure/1", baseURL: "http://0ad94da2.ngrok.io/burdahackday5") { (deserializer, error) in
+            NetworkManager.shared.requestAll([:], serializer: NokiaApiDeserializer<Measure>.self, route: "/rest/data/measure/2", baseURL: "http://0ad94da2.ngrok.io/burdahackday5") { (deserializer, error) in
                 guard let newMeasures = deserializer?.objects else {
+                    self.healthProfile.measures.removeAll()
+                    self.healthProfile.measures += Measures.allMeasures()
+                    self.tableView.reloadData()
                     return
                 }
                 self.healthProfile.measures.removeAll()
